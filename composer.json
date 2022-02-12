@@ -1,0 +1,18 @@
+{
+    "name": "tecdynamics/revision",
+    "description": "Revision package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Tec\\Revision\\": "src"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tec\\Revision\\Providers\\RevisionServiceProvider"
+            ]
+        }
+    }
+}
