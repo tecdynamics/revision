@@ -4,15 +4,7 @@ namespace Tec\Revision;
 
 class FieldFormatter
 {
-    /**
-     * Format the value according to the provided formats.
-     *
-     * @param string $key
-     * @param string $value
-     * @param array $formats
-     * @return string formatted value
-     */
-    public static function format($key, $value, array $formats)
+    public static function format(string $key, string|null $value, array $formats): string|null
     {
         foreach ($formats as $pkey => $format) {
             $parts = explode(':', $format);
